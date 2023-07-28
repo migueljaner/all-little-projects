@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Practice</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="js/js.js"></script>
+  <script>
+  window.onload = function(){
+    document.getElementById("jumparrow").addEventListener('click', () => window.scrollTo({
+        top: 750,
+        behavior: 'smooth',
+    }));
+
+  }
+  </script>
+</head>
+<body>
+<div class="container-fluid bg-dark sticky-top d-flex justify-content-between">
+    <a data-toggle="modal" data-target="#modalLoginForm" href="#">Login/Register <i class="fas fa-sign-in-alt" style="color:white;"></i></a>
+    <ol class="breadcrumb p-0 mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    </ol>
+    <a href="#">Languages <i class="fas fa-globe-europe" style="color:white;"></i></a>
+</div>
+
+<header id="heade">
+  <div class="container-fluid d-flex" id="headfvw"> 
+  </div>
+  <div id="textfvw">
+      <img class="mx-auto d-block" src="img/logo1.png" alt="logo">
+      <span>URBAN PLEASURE</span><br>
+      <div id="jumparrow">
+        <img src="img/arrow.png" style="margin-top:20px;width:10%; animation: jump 5s infinite; cursor: pointer;">
+      </div>
+      
+  </div>
+</header>
+
+<nav class="navbar navbar-toggleable-md  bg-faded bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" href="index.html">
+        <img src="img/logo1.png" alt="Logo" style="width:40px;">
+    </a>
+    <form class="navbar-form">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" name="search">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                  <i class="fas fa-search"></i>
+                  </button>
+                </div>
+            </div>
+      </form> 
+    <button class="navbar-toggler navbar-toggler-center" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+    
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="shopingcart.html>Cesta de compra<i class="fas fa-shopping-cart"></i></a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Productos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categorias
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="categoria.html">Tablas</a>
+            <a class="dropdown-item" href="categoria.html">Ejes</a>
+            <a class="dropdown-item" href="categoria.html">Ruedas</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+</nav>
+<div class="container pt-4" id="featuredcontainer">
+  <div class="col-md-12 text-center" id="destacados">
+    <br><br>
+    <i class="fas fa-star"></i><h1>CATEGORIAS</h1><i class="fas fa-star"></i>
+  </div>
+  <div class="row featurette d-flex mt-3 featured">
+    <div class="col-md-7 align-self-center">
+      <h1 class="featurette-heading mb-3"><span class="badge badge-dark">Tablas</span></h1>
+      <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <a href="categoria.html" class="btn btn-primary">Ver Categoria</a>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"  src="img/featimg1.jpg" data-holder-rendered="true">
+    </div>
+  </div>
+  <div class="row featurette d-flex featured">
+      <div class="col-md-7 align-self-center">
+        <h1 class="featurette-heading mb-3"><span class="badge badge-dark">Ejes</span></h1>
+        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <a href="categoria.html" class="btn btn-primary">Ver Categoria</a>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="img/featimg2.jpg" data-holder-rendered="true">
+      </div>
+  </div>
+  <div class="row featurette d-flex mb-5 featured">
+      <div class="col-md-7 align-self-center">
+          <h1 class="featurette-heading mb-3"><span class="badge badge-dark">Ruedas</span></h1>
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <a href="categoria.html" class="btn btn-primary">Ver Categoria</a>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="img/featimg3.jpg" data-holder-rendered="true">
+      </div>
+      
+    </div>
+</div>
+<div class="container mb-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Trending <b>Products</b></h2>
+        <div id="myCarousel" class="carousel slide d-flex" data-ride="carousel" data-interval="0">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+          <div class="item carousel-item active">
+            <div class="row mediacarro">
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <div class="img-box">
+                    <img src="img/carro1.jpg" class="img-responsive img-fluid" alt="">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>Tabla Maxjumpro</h4>
+                    <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                    <a href="product.html" class="btn btn-primary">Ver Producto</a>
+                  </div>						
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <div class="img-box">
+                    <img src="img/carro2.jpg" class="img-responsive img-fluid" alt="">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>Energytable</h4>
+                    <p class="item-price"><strike>$25.00</strike> <span>$23.99</span></p>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                    <a href="product.html" class="btn btn-primary">Ver Producto</a>
+                  </div>						
+                </div>
+              </div>		
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <div class="img-box">
+                    <img src="img/carro3.jpg" class="img-responsive img-fluid" alt="">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>Tablecast</h4>
+                    <p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                      </ul>
+                    </div>
+                    <a href="product.html" class="btn btn-primary">Ver Producto</a>
+                  </div>						
+                </div>
+              </div>								
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <div class="img-box">
+                    <img src="img/carro1.jpg" class="img-responsive img-fluid" alt="">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>FlipSR</h4>
+                    <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                    <a href="product.html" class="btn btn-primary">Ver Producto</a>
+                  </div>						
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item carousel-item">
+            <div class="row mediacarro">
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <div class="img-box">
+                    <img src="img/carro2.jpg" class="img-responsive img-fluid" alt="">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>TableMX</h4>
+                    <p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                    <a href="product.html" class="btn btn-primary">Ver Producto</a>
+                  </div>						
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <div class="img-box">
+                    <img src="img/carro3.jpg" class="img-responsive img-fluid" alt="">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>Table Axwell Pro</h4>
+                    <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                      </ul>
+                    </div>
+                    <a href="product.html" class="btn btn-primary">Ver Producto</a>
+                  </div>						
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <div class="img-box">
+                    <img src="img/carro1.jpg" class="img-responsive img-fluid" alt="">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>TableBose Speaker</h4>
+                    <p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                    <a href="product.html" class="btn btn-primary">Ver Producto</a>
+                  </div>						
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <div class="img-box">
+                    <img src="img/carro2.jpg" class="img-responsive img-fluid" alt="">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>GalaxyTable</h4>
+                    <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                    <a href="product.html" class="btn btn-primary">Ver Producto</a>
+                  </div>						
+                </div>
+              </div>						
+            </div>
+          </div>
+          <div class="item carousel-item">
+            <div class="row mediacarro">
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <div class="img-box">
+                    <img src="img/carro3.jpg" class="img-responsive img-fluid" alt="">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>TableApple</h4>
+                    <p class="item-price"><strike>$369.00</strike> <span>$349.00</span></p>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                    <a href="product.html" class="btn btn-primary">Ver Producto</a>
+                  </div>						
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <div class="img-box">
+                    <img src="img/carro1.jpg" class="img-responsive img-fluid" alt="">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>Table123123</h4>
+                    <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                    <a href="product.html" class="btn btn-primary">Ver Producto</a>
+                  </div>						
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <div class="img-box">
+                    <img src="img/carro2.jpg" class="img-responsive img-fluid" alt="">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>TableGoogle</h4>
+                    <p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                    <a href="product.html" class="btn btn-primary">Ver Producto</a>
+                  </div>						
+                </div>
+              </div>	
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <div class="img-box">
+                    <img src="img/carro3.jpg" class="img-responsive img-fluid" alt="">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>TableSamsung</h4>
+                    <p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                    <a href="product.html" class="btn btn-primary">Ver Producto</a>
+                  </div>						
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="">
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i>
+          <input type="text" id="orangeForm-name" class="form-control validate" required>
+          <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+        </div>
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="orangeForm-email" class="form-control validate" required>
+          <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="orangeForm-pass" class="form-control validate" required>
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="submit" class="btn btn-deep-orange">Sign up</button>
+        <button class="btn btn-deep-orange" data-toggle="modal" data-target="#modalRegisterForm">Register</button>
+      </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Register</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form action="">
+        <div class="modal-body">
+          <div class="md-form">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="orangeForm-name" class="form-control validate" required>
+            <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="orangeForm-email" class="form-control validate" required>
+            <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+            <input type="email" id="orangeForm-email" class="form-control validate" required>
+            <label data-error="wrong" data-success="right" for="orangeForm-email">Repeat Your email</label>
+          </div>
+  
+          <div class="md-form">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="orangeForm-pass" class="form-control validate" required>
+            <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+            <input type="password" id="orangeForm-pass" class="form-control validate" required>
+            <label data-error="wrong" data-success="right" for="orangeForm-pass">Repeat Your password</label>
+          </div>
+  
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="submit" class="btn btn-deep-orange">Register</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<footer class="jumbotron footer">
+  <div class="container bottom_border">
+  <div class="row">
+  <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+  <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+  <!--headin5_amrc-->
+  <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+  <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+  <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+  <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+  
+  
+  </div>
+  
+  
+  <div class=" col-sm-4 col-md  col-6 col">
+  <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+  <!--headin5_amrc-->
+  <ul class="footer_ul_amrc">
+  <li><a href="#">Image Rectoucing</a></li>
+  <li><a href="#">Clipping Path</a></li>
+  <li><a href="#">Hollow Man Montage</a></li>
+  <li><a href="#">Ebay & Amazon</a></li>
+  <li><a href="#">Hair Masking/Clipping</a></li>
+  <li><a href="#">Image Cropping</a></li>
+  </ul>
+  <!--footer_ul_amrc ends here-->
+  </div>
+  
+  
+  <div class=" col-sm-4 col-md  col-6 col">
+  <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+  <!--headin5_amrc-->
+  <ul class="footer_ul_amrc">
+  <li><a href="#">Remove Background</a></li>
+  <li><a href="#">Shadows & Mirror Reflection</a></li>
+  <li><a href="#">Logo Design</a></li>
+  <li><a href="#">Vectorization</a></li>
+  <li><a href="#">Hair Masking/Clipping</a></li>
+  <li><a href="#">Image Cropping</a></li>
+  </ul>
+  <!--footer_ul_amrc ends here-->
+  </div>
+  
+  
+  <div class=" col-sm-4 col-md  col-12 col">
+  <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+  <!--headin5_amrc ends here-->
+  
+  <ul class="footer_ul2_amrc">
+      <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+  </ul>
+  <!--footer_ul2_amrc ends here-->
+  </div>
+  </div>
+  </didv>
+  <!--foote_bottom_ul_amrc ends here-->
+  <p class="text-center">Copyright @2017 | Designed With by <a href="#">Urban Pleasure</a></p>
+  </footer>
+</body>
+</html>

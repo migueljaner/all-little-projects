@@ -1,0 +1,128 @@
+/*VARIABLES*/
+/*MIXINS*/
+/*INHERITANCE*/
+.flexlogin {
+  justify-content: center;
+  text-align: center;
+  align-content: center; }
+
+body {
+  background-image: url(img/fondo.jpg); }
+
+nav, header {
+  box-shadow: inset 0px 0px 324px -24px black;
+  border: 2px solid black;
+  border-radius: 0 0 95px 30px; }
+
+.content {
+  display: grid;
+  grid-template-columns: 10% auto 10%; }
+
+#carousel > div {
+  border: 1px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px 10px black; }
+
+footer div {
+  box-shadow: inset inset 0px 0px 324px -24px black;
+  border: 2px solid black;
+  border-radius: 95px 95px  0px 0px; }
+
+.card {
+  border: 1px solid black !important;
+  box-shadow: 5px 5px 15px 5px black;
+  background-image: url("img/cartbackground.jpg");
+  background-size: cover;
+  border-radius: 8px; }
+
+.card-body {
+  background-image: url("img/cartbackground.jpg");
+  background-size: cover;
+  border-radius: 8px; }
+  .card-body img {
+    background-image: url("img/cartbackground.jpg");
+    background-size: cover;
+    border-radius: 8px; }
+
+.card-header {
+  box-shadow: inset 0px 0px 30px 5px black; }
+
+.modal-dialog {
+  max-width: 50% !important; }
+
+.modal-content > * {
+  background-image: url("img/modalwall.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white; }
+
+.flexlogin {
+  display: flex;
+  flex-flow: column wrap;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif; }
+  .flexlogin div > hr {
+    border: 1px solid grey;
+    margin: 10px 0px 30px 0px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif; }
+  .flexlogin div > div {
+    display: flex;
+    flex-flow: column wrap;
+    width: fit-content;
+    min-width: 400px;
+    margin-bottom: 10px;
+    padding: 5px; }
+    .flexlogin div > div > span {
+      width: fit-content;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold; }
+  .flexlogin div > span {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px; }
+  .flexlogin div > div > input {
+    min-width: 400px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; }
+
+.moreimg {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  text-align: center; }
+  .moreimg img:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s; }
+
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background: #212123;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 1; }
+  #back-to-top:hover {
+    background: #e9ebec; }
+  #back-to-top.show {
+    opacity: 1; }
+
+#content {
+  height: 2000px; }
+
+#registerform {
+  max-width: 450px; }
+
+/*# sourceMappingURL=styles.css.map */

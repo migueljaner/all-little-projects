@@ -1,0 +1,118 @@
+#footer div div ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#body div#content div#sidebar div {
+  ul li {
+    color: #818181;
+    letter-spacing: 0.028em;
+    line-height: 24px;
+    a {
+      color: #818181;
+      text-decoration: none;
+      &:hover {
+        color: #4b4b4f;
+      }
+    }
+  }
+  &:first-child ul li {
+    letter-spacing: 0.024em;
+    line-height: 18px;
+    margin: 15px 0 0;
+  }
+  p {
+    color: #818181;
+    padding: 0;
+  }
+}
+
+#footer {
+  background: #dce9d4;
+  border-top: 1px solid #b8d0aa;
+  div {
+    height: 174px;
+    overflow: hidden;
+    div {
+      border-left: 1px solid #b8d0aa;
+      float: left;
+      height: 134px;
+      padding: 20px 20px;
+      width: 180px;
+      &:first-child {
+        border: none;
+      }
+      h1 {
+        color: #8c8c8c;
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0;
+        padding: 0 0 13px;
+        text-shadow: 1px 1px 1px $color3;
+        text-transform: uppercase;
+      }
+      ul li a {
+        letter-spacing: 0.028em;
+        line-height: 18px;
+      }
+      a {
+        color: #8c8c8c;
+        display: block;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        &:hover {
+          color: #4b4b4f;
+        }
+        &#mail {
+          background: url(../images/icons.png) no-repeat;
+          height: 14px;
+          line-height: 14px;
+          margin: 0 0 10px;
+          padding: 0 0 0 30px;
+        }
+        &#facebook {
+          background: url(../images/icons.png) no-repeat 0 -38px;
+          height: 20px;
+          line-height: 20px;
+          margin: 0 0 10px;
+          padding: 0 0 0 30px;
+        }
+        &#twitter {
+          background: url(../images/icons.png) no-repeat 0 -88px;
+          height: 18px;
+          line-height: 18px;
+          margin: 0 0 10px;
+          padding: 0 0 0 30px;
+        }
+        &#googleplus {
+          background: url(../images/icons.png) no-repeat 0 -134px;
+          height: 20px;
+          line-height: 20px;
+          margin: 0 0 10px;
+          padding: 0 0 0 30px;
+        }
+        &#mail:hover {
+          background: url(../images/icons.png) no-repeat 0 -14px;
+        }
+        &#facebook:hover {
+          background: url(../images/icons.png) no-repeat 0 -58px;
+        }
+        &#twitter:hover {
+          background: url(../images/icons.png) no-repeat 0 -106px;
+        }
+        &#googleplus:hover {
+          background: url(../images/icons.png) no-repeat 0 -154px;
+        }
+      }
+    }
+  }
+  p {
+    background: $color1;
+    color: $color3;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #8da181;
+  }
+}

@@ -1,0 +1,16 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Profile extends Model
+{
+    protected $table = 'profiles';
+
+    public function client()
+    {
+        return $this->belongsTo('App\Client');
+    }
+
+}

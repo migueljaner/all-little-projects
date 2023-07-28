@@ -1,0 +1,142 @@
+/* Website template by freewebsitetemplates.com */
+/*VARIABLES*/
+$color1: #356618;
+$color2: #96b285;
+$color3: #ffffff;
+$font1: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font2: Arial, Helvetica, sans-serif;
+/*MIXIN*/
+@mixin trans($color, $opacity) {
+  &:hover{
+    box-shadow: 2px 2px 2px 3px $color;
+    opacity: $opacity;
+  }
+}
+@mixin expand($measure) {
+  &:hover{
+    transform: scale($measure);
+    transition-duration: 0.5s;
+  }
+}
+/*INHERITANCE*/
+%colorate{
+  background: $color2;
+  color: $color1;
+}
+body {
+  background: url(../images/bg-body.jpg) repeat;
+  color: $color1;
+  font-family: $font2;
+  font-size: (2*7px); /*OPERATORS*/
+  margin: 0;
+  min-width: 470px + 470px; /*OPERATORS*/
+  padding: 0;
+}
+
+a {
+  outline: none;
+}
+
+img {
+  border: 0;
+}
+
+p {
+  margin: 0;
+  text-align: justify;
+  a {
+    color: $color1;
+    &:hover {
+      color: #66a143;
+    }
+  }
+}
+
+#page {
+  background: $color1;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 900px;
+}
+
+#header {
+  background: $color3;
+  height: 151px;
+  a#logo {
+    display: block;
+    height: 86px;
+    padding: 15px 0 0 20px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  > ul {
+    background: #4b4b4b;
+    height: 49px;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 900px;
+    > li {
+      float: left;
+      position: relative;
+      width: 150px;
+      > a {
+        color: #f0f2c9;
+        display: block;
+        letter-spacing: 0.1em;
+        line-height: 49px;
+        text-align: center;
+        text-decoration: none;
+      }
+      &.current > a {
+        @extend %colorate;
+        &:hover {
+        @extend %colorate;
+        }
+      }
+    }
+  }
+  ul li {
+    ul li.current a {
+      @extend %colorate;
+      &:hover {
+        @extend %colorate;
+      }
+    }
+    a:hover {
+      background: #daead0;
+      color: #1b330c;
+    }
+    ul {
+      list-style: none;
+      left: -99999px;
+      margin: 0;
+      overflow: visible;
+      padding: 11px 0 0;
+      position: absolute;
+      top: 49px;
+      width: 150px;
+      z-index: 2;
+    }
+    &:hover ul {
+      left: 0;
+      top: 49px;
+    }
+    ul li {
+      background: #4B4B4B;
+      a {
+        color: #f0f2c9;
+        display: block;
+        line-height: 31px;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+  }
+}
+/*Imports*/
+@import "style2";
+@import "style3";

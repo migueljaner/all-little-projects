@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proves Cookies</title>
+	<script src="js.js"></script>
+	<style>
+		img{
+			width: 50px;
+		}
+	</style>
+</head>
+<body>
+	<select id="select" onchange="cambiarColor()" value="undefined">
+		<option value="white">Blanco</option>
+		<option value="blue">Blau</option>
+		<option value="yellow">Groc</option>
+		<option value="red">Vermell</option>
+	</select>
+	<div>
+		<img src="alien.png" id="img1">
+		<img src="alien.png" id="img2">
+		<img src="alien.png" id="img3">
+		<img src="alien.png" id="img4">
+	</div>
+	<span style="float: right;"><button id="a1">Submit</button> NOM: <input type="text" id="inom" placeholder="undefined"></span>
+	<button onclick="removeCookies()">Borrar Cookies</button>
+</body>
+</html>

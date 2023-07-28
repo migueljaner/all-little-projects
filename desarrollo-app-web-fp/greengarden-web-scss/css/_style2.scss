@@ -1,0 +1,424 @@
+#body {
+  background: $color3;
+  div {
+    &.header {
+      height: 557px;
+      div {
+        position: relative;
+        a img {
+          display: block;
+          filter: alpha(opacity = 100);
+          /* Needed for IE8 and old versions */
+          opacity: 1;
+        }
+      }
+      ul li a.figure img {
+        display: block;
+        filter: alpha(opacity = 100);
+        /* Needed for IE8 and old versions */
+        opacity: 1;
+        @include expand(1.2);
+      }
+    }
+    &.body ul li a img {
+      display: block;
+      filter: alpha(opacity = 100);
+      /* Needed for IE8 and old versions */
+      opacity: 1;
+      @include trans(black,0.5);
+    }
+    &.header {
+      div a img:hover, ul li a.figure img:hover {
+        filter: alpha(opacity = 90);
+        /* Needed for IE8 and old versions */
+        opacity: 0.9;
+      }
+    }
+    &.body ul li a img:hover {
+      filter: alpha(opacity = 90);
+      /* Needed for IE8 and old versions */
+      opacity: 0.9;
+    }
+    &.header {
+      div div {
+        background: url(../images/bg-description.png) repeat-x;
+        height: 75px;
+        bottom: 0;
+        position: absolute;
+        padding: 17px 20px;
+        left: 0;
+        width: 860px;
+        h1 {
+          font-family: $font1;
+          font-size: 24px;
+          font-weight: normal;
+          margin: 0;
+          text-transform: uppercase;
+          a {
+            color: #e3e699;
+            text-decoration: none;
+            &:hover {
+              color: $color3;
+            }
+          }
+        }
+        p {
+          color: $color3;
+          letter-spacing: 0.028em;
+          line-height: 24px;
+          a.continue {
+            background: url(../images/interface.png) no-repeat -400px 0;
+            display: inline-block;
+            height: 20px;
+            left: 3px;
+            position: relative;
+            top: 5px;
+            width: 20px;
+            &:hover {
+              background: url(../images/interface.png) no-repeat -400px -20px;
+            }
+          }
+        }
+      }
+      ul {
+        background: $color1;
+        list-style: none;
+        margin: 0;
+        overflow: hidden;
+        padding: 10px 0;
+        li {
+          background: url(../images/separator1.png) repeat-y;
+          float: left;
+          overflow: hidden;
+          padding: 9px 20px 7px 0;
+          width: 280px;
+          &:first-child {
+            background: none;
+          }
+        }
+      }
+    }
+    &#content ul.section li img {
+      display: block;
+      float: left;
+    }
+    &.header ul li {
+      a.figure {
+        display: block;
+        float: left;
+        img {
+          display: block;
+          border: 1px solid $color3;
+          margin: 0 20px 0;
+        }
+      }
+      &.current h3 a {
+        color: #e3e699;
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 13px;
+        letter-spacing: 0.028em;
+        margin: 0;
+        padding: 0 0 10px;
+        a {
+          color: #e3e699;
+          text-decoration: none;
+          &:hover {
+            color: $color3;
+          }
+        }
+      }
+      p {
+        color: $color3;
+        letter-spacing: 0.022em;
+        line-height: 18px;
+        text-align: left;
+      }
+    }
+    &.body {
+      padding: 23px 20px 0;
+      h1 {
+        background: #dce9d4;
+        border-bottom: 2px solid #b3cca4;
+        color: #836145;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        height: 37px;
+        line-height: 37px;
+        margin: 0;
+        padding: 0 0 0 20px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px $color3;
+      }
+    }
+    &.footer div h1 {
+      background: #dce9d4;
+      border-bottom: 2px solid #b3cca4;
+      color: #836145;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 18px;
+      font-weight: normal;
+      height: 37px;
+      line-height: 37px;
+      margin: 0;
+      padding: 0 0 0 20px;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px $color3;
+    }
+    &.body ul {
+      list-style: none;
+      margin: 0;
+      overflow: hidden;
+      padding: 21px 0;
+      li {
+        float: left;
+        margin: 0 0 0 20px;
+        width: 200px;
+        &:first-child {
+          margin: 0;
+        }
+      }
+    }
+    &#content {
+      ul.section li:first-child, div#sidebar div ul li:first-child {
+        margin: 0;
+      }
+    }
+    &.body ul li {
+      h2 {
+        color: #836145;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0;
+        padding: 24px 0 10px;
+        text-transform: uppercase;
+      }
+      p {
+        color: #4b4b4b;
+        letter-spacing: 0.028em;
+        line-height: 24px;
+        text-align: left;
+      }
+    }
+    &.footer {
+      border-top: 1px solid #d7d6cd;
+      margin: 0 20px;
+      overflow: hidden;
+      padding: 23px 0;
+      img {
+        display: block;
+        float: left;
+      }
+      div {
+        float: right;
+        width: 540px;
+        ol {
+          margin: 0;
+          padding: 20px 0 0 20px;
+          li {
+            color: #4b4b4b;
+            font-weight: bold;
+            margin: 10px 0;
+            p {
+              font-weight: normal;
+              letter-spacing: 0.028em;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+    &#content {
+      border-top: 1px solid #5d8546;
+      overflow: hidden;
+      padding: 35px 20px;
+      h1 {
+        color: #818181;
+        font-size: 20px;
+        letter-spacing: 0.028em;
+        margin: 0;
+        text-transform: uppercase;
+      }
+      h3 {
+        color: #836145;
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 0.028em;
+        line-height: 24px;
+        margin: 0;
+        padding: 30px 0 0;
+        &.first {
+          padding: 12px 0 0;
+        }
+      }
+      p {
+        letter-spacing: 0.028em;
+        line-height: 24px;
+        padding: 25px 0 0;
+      }
+      ul.section {
+        list-style: none;
+        margin: 0;
+        padding: 29px 0 0;
+        li {
+          margin: 35px 0 0;
+          overflow: hidden;
+          span {
+            display: block;
+            float: left;
+          }
+          div {
+            float: right;
+            width: 520px;
+            h2 {
+              color: #836145;
+              font-size: 16px;
+              letter-spacing: 0.028em;
+              line-height: 13px;
+              margin: 0;
+            }
+          }
+        }
+      }
+      div#article h2 {
+        color: #836145;
+        font-size: 16px;
+        letter-spacing: 0.028em;
+        line-height: 13px;
+        margin: 0;
+      }
+      ul.section li div p {
+        padding: 23px 0 0;
+      }
+      form {
+        margin: 0;
+        padding: 30px 0 0;
+        p {
+          color: #818181;
+          padding: 0 0 25px;
+        }
+        label {
+          display: block;
+          margin: 20px 0;
+          overflow: hidden;
+          span {
+            &:first-child {
+              background: none;
+              color: #836145;
+              float: left;
+              height: auto;
+              text-transform: uppercase;
+              width: 200px;
+            }
+            background: url(../images/interface.png) no-repeat;
+            display: block;
+            float: left;
+            height: 19px;
+            width: 320px;
+            input {
+              background: none;
+              border: none;
+              color: #818181;
+              font-family: $font2;
+              font-size: 14px;
+              height: 17px;
+              letter-spacing: 0.028em;
+              line-height: 17px;
+              margin: 1px 0 0 2px;
+              padding: 0;
+              width: 316px;
+            }
+            &.message {
+              background: url(../images/interface.png) no-repeat 0 -25px;
+              height: 151px;
+              textarea {
+                background: none;
+                border: none;
+                color: #818181;
+                font-family: $font2;
+                font-size: 14px;
+                height: 147px;
+                letter-spacing: 0.028em;
+                margin: 2px 0 0 2px;
+                overflow: auto;
+                padding: 0;
+                resize: none;
+                width: 316px;
+              }
+            }
+          }
+        }
+        input#send {
+          background: url(../images/interface.png) no-repeat -331px -56px;
+          border: none;
+          color: $color3;
+          cursor: pointer;
+          font-family: $font2;
+          font-size: 14px;
+          height: 25px;
+          letter-spacing: 0.028em;
+          line-height: 25px;
+          margin: 0 0 0 440px;
+          text-align: center;
+          text-shadow: 1px 1px 1px #514b61;
+          text-transform: uppercase;
+          width: 80px;
+          &:hover {
+            background: url(../images/interface.png) no-repeat -331px -81px;
+          }
+        }
+      }
+      div {
+        &#article {
+          border-right: 1px solid $color2;
+          float: left;
+          padding: 0 20px 0 0;
+          width: 580px;
+          img {
+            display: block;
+            margin: 0 0 35px;
+          }
+          h1 {
+            padding: 0 0 17px;
+          }
+          h2 {
+            line-height: 24px;
+          }
+          span {
+            color: #818181;
+            display: block;
+            letter-spacing: 0.028em;
+            line-height: 24px;
+          }
+        }
+        &#sidebar {
+          float: right;
+          width: 242px;
+          h3 {
+            color: #818181;
+            font-weight: bold;
+            line-height: normal;
+            padding: 0 0 15px;
+            text-transform: uppercase;
+          }
+          div {
+            border-top: 1px solid $color2;
+            padding: 20px 0;
+            &:first-child {
+              border: none;
+              padding: 0 0 20px;
+            }
+            ul {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

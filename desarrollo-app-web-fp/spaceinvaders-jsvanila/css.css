@@ -1,0 +1,179 @@
+body{
+	margin: 0;
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color: black;
+}
+#soporte{
+    margin: 0px;
+	height: 620px;
+    width: 100%;
+    position: relative;
+}
+#fondo{
+    position: absolute;
+    height: 530px;
+    background-image: url("img/fondo.gif");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 90px 50px 0px 50px;
+    z-index: -1;
+}
+#pantalla{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px 50px 0px 50px;
+}
+#logo{
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    width: 310px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#score{
+    display:inline-block;
+    opacity: 0;
+    width: 120px;
+    position: absolute;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    transition: opacity 1s ease-in-out;
+}
+#puntuacion{
+    display:inline-block;
+    opacity: 0;
+    width: 120px;
+    position: absolute;
+    left: 0;
+    top: 9%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 11;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+}
+#vidas{
+    display: inline-block;
+    opacity: 0;
+    width: 5%;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 1s ease-in-out;
+}
+#vidas img{
+    width: 100%;
+}
+#binicio{
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 5%;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px;
+}
+#binicio:hover{
+    width: 120px;
+    transition: width .1s;
+}
+#gameover{
+    position: absolute;
+    height: 530px;
+    background-image: url("img/GameOver.gif");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 90px 50px 0px 50px;
+    z-index: 0;
+}
+#rondas{
+    display:inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    opacity: 0;
+    width: 120px;
+    position: absolute;
+    right: 0;
+    top: 9%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    transition: opacity 1s ease-in-out;
+}
+#hp{
+    display: inline-block;
+    opacity: 0;
+    width: 215px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    border-right: 0px solid red;
+    border-radius: 17px;
+    right: 0;
+    left: 0;
+    top: 5.5%;
+    margin-left: 255px;
+    margin-right: auto;
+    z-index: 10;
+    transition: opacity 1s ease-in-out;
+}
+#hpboss{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    width: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 11;
+}
+#ranking{
+    position: absolute; 
+    opacity: 1;
+    left: 0; 
+    right: 0; 
+    top: 150px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px;
+}
+#topscore{
+    position: absolute;
+    opacity: 1;
+    left: 0; 
+    right: 0; 
+    top: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    margin-left: 70px; 
+    margin-right: auto; 
+    width: 100px;
+}

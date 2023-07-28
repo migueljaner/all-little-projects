@@ -1,0 +1,23 @@
+/*VARIABLES*/
+$insetshadow: inset 0px 0px 324px -24px black;
+$carroimg: url("img/cartbackground.jpg");
+/*MIXINS*/
+@mixin trans($color, $opacity) {
+  &:hover{
+    box-shadow: 2px 2px 2px 3px $color;
+    opacity: $opacity;
+  }
+}
+@mixin expand($measure) {
+  &:hover{
+    transform: scale($measure);
+    transition-duration: 0.5s;
+  }
+}
+/*INHERITANCE*/
+%aligncenter{
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+@import "style2";

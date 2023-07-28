@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Test",
+    "address": "Test",
+    "location": "Test",
+    "guests": 2,
+    "image": "Test.jpg"
+  },
+  {
+    "name": "Test 2",
+    "address": "Test 2",
+    "location": "Test 2",
+    "guests": 6,
+    "image": "Test 2.jpg"
+  },
+  {
+    "name": "Test 3",
+    "address": "Test 3",
+    "location": "Test 3",
+    "guests": 2,
+    "image": "Test 3.jpg"
+  }
+]

@@ -1,0 +1,145 @@
+
+body {
+    background-image: url(img/fondo.jpg);
+  }
+  
+  nav, header {
+    box-shadow: $insetshadow;
+    border: 2px solid black;
+    border-radius: 0 0 95px 30px;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+  }
+  
+  #carousel > div {
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px 10px black;
+  }
+  
+  footer div {
+    box-shadow: inset $insetshadow;
+    border: 2px solid black;
+    border-radius: 95px 95px  0px 0px;
+  }
+  
+  .card {
+    border: 1px solid black !important;
+    box-shadow: 5px 5px 15px 5px black;
+    background-image: $carroimg;
+    background-size: cover;
+    border-radius: 8px;
+  }
+  
+  .card-body {
+    background-image: $carroimg;
+    background-size: cover;
+    border-radius: 8px;
+    img {
+      background-image: $carroimg;
+      background-size: cover;
+      border-radius: 8px;
+    }
+  }
+  
+  .card-header {
+    box-shadow: inset 0px 0px 30px 5px black;
+  }
+  
+  .modal-dialog {
+    max-width: 50% !important;
+  }
+  
+  .modal-content > * {
+    background-image: url("img/modalwall.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  
+  .flexlogin {
+    display: flex;
+    flex-flow: column wrap;
+    @extend %aligncenter;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    div > {
+      hr {
+        border: 1px solid grey;
+        margin: 10px 0px 30px 0px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div {
+        display: flex;
+        flex-flow: column wrap;
+        width: fit-content;
+        min-width: 400px;
+        margin-bottom: 10px;
+        padding: 5px;
+        > span {
+          width: fit-content;
+          color: black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+        }
+      }
+      span {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+      }
+      div > input {
+        min-width: 400px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  .moreimg {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    text-align: center;
+    img{
+      @include expand(1.2)
+    }
+  }
+  
+  #back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #212123;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 1;
+    &:hover {
+      background: #e9ebec;
+    }
+    &.show {
+      opacity: 1;
+    }
+  }
+  
+  #content {
+    height: 2000px;
+  }
+  
+  #registerform {
+    max-width: 450px;
+  }
